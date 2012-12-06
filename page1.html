@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>page 1 : HTML</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="javascript/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<nav><a href="index.html">Home</a> <a href="page1.html">HTML</a> <a href="page2.html">CSS</a> <a href="page3.html">WEBFONTS</a> <a href="offline.html">offline</a> &nbsp; </nav>
+	<h5>Read it later ? <button type="button" id="readOffBtn">SAVE OFFLINE</button></h5>
+	<article id="articletext">
+		<h1>My first exemple of article : HTML</h1>
+		<p>HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the (visual and aural) layout, for a variety of devices. Along with graphics and scripting, HTML and CSS are the basis of building Web pages and Web Applications. Learn more below about: </p>
+		<h4>What is HTML?</h4>
+		<img src="images/logo-html5.jpg" />
+		<p>HTML is the language for describing the structure of Web pages. HTML gives authors the means to:</p>
+		<ul>
+ 			<li>Publish online documents with headings, text, tables, lists, photos, etc.</li>
+ 			<li>Retrieve online information via hypertext links, at the click of a button.</li>
+ 			<li>Design forms for conducting transactions with remote services, for use in searching for information, making reservations, ordering products, etc.</li>
+ 			<li>Include spread-sheets, video clips, sound clips, and other applications directly in their documents.</li>
+		</ul>
+ 		<p>With HTML, authors describe the structure of pages using markup. The elements of the language label pieces of content such as “paragraph,” “list,” “table,” and so on.</p>
+		<p>Source : <a href="http://www.w3.org/standards/webdesign/htmlcss" target="_blank">W3C</a></p>
+	</article>
+</div>
+<script src="javascript/readOfflineApp.js"></script>
+<script>
+		$(document).ready(function() {
+			pageready();
+		});
+</script>
+</body>
+</html>

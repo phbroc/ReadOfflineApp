@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>page 2 : CSS</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="javascript/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<nav><a href="index.html">Home</a> <a href="page1.html">HTML</a> <a href="page2.html">CSS</a> <a href="page3.html">WEBFONTS</a> <a href="offline.html">offline</a> &nbsp; </nav>
+	<h5>Read it later ? <button type="button" id="readOffBtn">SAVE OFFLINE</button></h5>
+	<article id="articletext">
+		<h1>My second exemple of article : CSS</h1>
+		<h4>What is CSS?</h4>
+		<img src="images/logo-css3.jpg" />
+		<p>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the separation of structure (or: content) from presentation.</p>
+		<p>Source : <a href="http://www.w3.org/standards/webdesign/htmlcss" target="_blank">W3C</a></p>
+	</article>
+</div>
+<script src="javascript/readOfflineApp.js"></script>
+<script>
+		$(document).ready(function() {
+			pageready();
+		});
+</script>
+</body>
+</html>

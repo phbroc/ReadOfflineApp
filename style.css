@@ -1,0 +1,95 @@
+html {
+	font-size: 0.9em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {	
+	margin:0px;
+	padding:0px;
+	color:#000000;
+	background: #dddddd;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1025px) {
+	#wrapper{	
+		position:relative;
+		width:950px;
+		padding-bottom:20px;
+		margin:20px auto;
+		border: 1px solid #999999;
+		background: #ffffff;
+	}
+}
+/* smaller screens ---------------- */
+@media only screen and (min-width : 240px) and (max-width : 1024px){
+	#wrapper{	
+		position:relative;
+		width:95%;
+		padding-bottom:20px;
+		margin:20px auto;
+		border: 1px solid #999999;
+		background: #ffffff;
+	}
+}
+
+nav {
+	background: #000000;
+	width: 100%;
+}
+
+nav > a {
+	position: relative;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	width: 100px;
+	float: left;
+	text-align: center;
+	background: #000000;
+}
+
+nav > a:nth-child(2) {
+	background: #555555;
+}
+
+nav > a:nth-child(4) {
+	background: #555555;
+}
+
+h1 {
+	margin-top: 5px;
+}
+
+h5 {
+	padding: 20px;
+	margin-top: 10px;
+}
+
+article {
+	padding: 20px;
+}
+
+#infooff {
+	padding: 20px;
+}
+
+#sheetList {
+	padding: 20px;
+	list-style-type: none;
+}
+
+#sheetList a {
+	text-decoration: underline; 
+	cursor: pointer;
+}
+#sheetList .sheetinfo {
+	color: #999999;
+}
+#sheetList .sheetli {
+	background-color: none;
+}
+#sheetList .sheetlicurrent {
+	background-color: #ddddff;
+}
+

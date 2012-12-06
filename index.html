@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.appcache">
+<head>
+	<title>home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="javascript/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<nav><a href="index.html">Home</a> <a href="page1.html">HTML</a> <a href="page2.html">CSS</a> <a href="page3.html">WEBFONTS</a> <a href="offline.html">offline</a> &nbsp;</nav>
+	<article id="articletext">
+	</article>
+</div>
+<script>
+function myOnload() 
+{	
+	if (navigator.onLine) 
+	{
+		$('#articletext').load('home.html #articletext', function(response, status, xhr) 
+			{
+				if (status == "success") 
+				{
+					// ok
+				}
+			}
+		);
+	}
+	else
+	{
+		document.location.href='offline.html';
+	}
+};
+
+$(document).ready(function() {
+  // Handler for .ready() called.
+  console.log('ready');
+  myOnload();
+});
+</script>
+</body>
+</html>
