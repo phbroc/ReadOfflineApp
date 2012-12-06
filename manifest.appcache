@@ -1,5 +1,9 @@
 CACHE MANIFEST
-# 2012-12-04 v1.0
+# 2012-12-05 v1.1
+
+# Explicitly cached entries
+index.html
+
 CACHE:
 /offline.html
 /style.css
@@ -9,5 +13,6 @@ CACHE:
 NETWORK:
 *
 
+# offline.html will be displayed if the user is offline
 FALLBACK:
-/html/ /offline.html
+/ /offline.html
