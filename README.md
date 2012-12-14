@@ -1,8 +1,7 @@
 Read offline app
 =========================================
 
-This repository contains the code of the web app readOfflineApp, 
-by Philippe Brouard (http://www.phbroc.fr).
+This repository contains the code of the web app readOfflineApp.
 
 The webapp readOfflineApp is written for HTML5 website. The purpose is to store 
 the content of pages in localStorage and appcache of the mobile device, on demand.
@@ -26,18 +25,13 @@ License
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. This program
-is licenced under the creative commons licence Attribution-ShareAlike
-[CC-BY-SA][1] Philippe Brouard
+is a free software under license [GPL v3][1].
     
 Some pieces of javascript code were inspired by previous developpement 
 of Adrian Kosmaczewski Copyright (c) 2012 Adrian Kosmaczewski. 
     
-JQuery source code is under [MIT licence][2]
-
-If you wish to use this file in another project or create a modified
-version you should use this source code under the original version
-of the license.
+JQuery source code is under [MIT license][2].
 	
-[1]:http://creativecommons.org/licenses/by-sa/2.0/fr/
+[1]:http://www.gnu.org/licenses/gpl.html
 [2]:https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt
     
