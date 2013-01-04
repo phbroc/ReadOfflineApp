@@ -25,13 +25,13 @@ License
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. This program
-is a free software under license [GPL v3][1].
+is a free software under license [LGPL v3][1].
     
 Some pieces of javascript code were inspired by previous developpement 
 of Adrian Kosmaczewski Copyright (c) 2012 Adrian Kosmaczewski. 
     
 JQuery source code is under [MIT license][2].
 	
-[1]:http://www.gnu.org/licenses/gpl.html
+[1]:http://www.gnu.org/licenses/lgpl.html
 [2]:https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt
     
