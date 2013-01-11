@@ -172,6 +172,17 @@ var ReadOfflineApp = function () {
 		var _ret = ('0' + _now.getDate()).substr(-2,2)+"/"+('0' +(_now.getMonth()+1)).substr(-2,2)+"/"+_now.getFullYear();
 		return _ret;
     };
+    
+    var getParamURL = function(name) {
+    	name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    	var regexS = "[\\?&]" + name + "=([^&#]*)";
+    	var regex = new RegExp(regexS);
+    	var results = regex.exec(window.location.href);
+    	if (results == null)
+        	return "";
+   	 	else
+        	return results[1];
+	}
 
     var getBase64ImageJpg = function(img) {
     	// Create an empty canvas element
@@ -237,6 +248,10 @@ var ReadOfflineApp = function () {
 					$('#infooff > span').html('offline');
 				});		
 				displaySheetsList();
+				if (getParamURL('first')=='true')
+				{
+					$('#infooff').prepend('<p>This is your first SAVE OFFLINE action. Your page is saved here. You can <a href="javascript:history.go(-1)">go back</a>.</p>');
+				}
 	    	}
         },
 
@@ -250,7 +265,16 @@ var ReadOfflineApp = function () {
 	    	{
 				currentSheetIndex = sheets.length;
             	sheets.push(sheet);
-				$('#readOffBtn').html('SAVED');
+            	if (currentSheetIndex > 0)
+            	{
+					$('#readOffBtn').html('SAVED');
+				}
+				else
+				{
+					$('#readOffBtn').html('SAVED');
+					// first time a page is saved, so I need to show offline page
+					document.location.href='offline.html?first=true';
+				}
 	    	}
 	    	else
 	    	{

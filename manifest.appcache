@@ -1,8 +1,8 @@
 CACHE MANIFEST
-# 2012-12-05 v1.1
+# 2013-01-11 v1.2
 
 # Explicitly cached entries
-index.html
+offline.html
 
 CACHE:
 /offline.html
