@@ -11,7 +11,7 @@ articles can be retrieved. All the code is client executed.
 Demo site
 ---------
 
-You can see it in action in this demo site : http://readofflineapp.phbroc.fr
+You can see it in action in this demo site : http://readofflinedemo.philippebrouard.fr
 
 Installation
 ------------
